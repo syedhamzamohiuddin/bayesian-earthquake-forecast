@@ -17,7 +17,7 @@ This project uses Bayesian autoregressive models to forecast the annual count of
 
 ## 📂 Project Structure
 - `R/`: Scripts for model order selection, prior sensitivity analysis, and prediction
-- `data/`: Earthquake count data (or script to load from USGS)
+- `data/`: Earthquake count data (taken from USGS website)
 - `results/`: Saved plots and intermediate outputs (PACF, AIC/BIC)
 - `report/`: PDF capstone report written in Overleaf
 
