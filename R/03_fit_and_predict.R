@@ -2,6 +2,12 @@ library(mvtnorm)
 
 # 5000 Posterior samples of model parameters ϕ and ν
 
+# Load data
+earthquakes.dat <- read.delim("data/earthquakes.txt")
+earthquakes.dat$Quakes <- as.numeric(earthquakes.dat$Quakes)
+y.dat <- earthquakes.dat$Quakes[1:100]
+
+
 p=3 ## order of AR process
 n.all=length(y.dat) ## T, total number of data
 
