@@ -1,6 +1,6 @@
 ## read data, you need to make sure the data file is in your current working directory 
 print("hi")
-earthquakes.dat <- read.delim("D:\\DDocuments\\online_courses\\coursera\\bayesian\\course5\\data\\earthquakes.txt")
+earthquakes.dat <- read.delim("data/earthquakes.txt")
 earthquakes.dat$Quakes=as.numeric(earthquakes.dat$Quakes)
 
 y.dat=earthquakes.dat$Quakes[1:100] ## this is the training data
