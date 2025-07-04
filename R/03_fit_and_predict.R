@@ -1,3 +1,12 @@
+# ------------------------------------------------------------------------------
+# 03_posterior_sampling_and_forecasting.R
+#
+# This script fits a Bayesian AR(3) model to earthquake count data using a 
+# Normal-Inverse Gamma prior. It performs posterior sampling (ϕ and ν) and 
+# generates 4-step-ahead forecasts. Outputs include posterior means and 
+# predicted earthquake counts.
+# ------------------------------------------------------------------------------
+
 library(mvtnorm)
 
 # 5000 Posterior samples of model parameters ϕ and ν
