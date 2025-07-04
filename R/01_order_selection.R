@@ -1,4 +1,4 @@
-earthquakes.dat <- read.delim("D:\\DDocuments\\online_courses\\coursera\\bayesian\\course5\\data\\earthquakes.txt")
+earthquakes.dat <- read.delim("data/earthquakes.txt")
 earthquakes.dat$Quakes=as.numeric(earthquakes.dat$Quakes)
 
 
@@ -12,7 +12,7 @@ acf(y)
 pacf(y, lag.max = 4)
 
 
-earthquakes.dat <- read.delim("D:\\DDocuments\\online_courses\\coursera\\bayesian\\course5\\data\\earthquakes.txt")
+earthquakes.dat <- read.delim("data/earthquakes.txt")
 earthquakes.dat$Quakes=as.numeric(earthquakes.dat$Quakes)
 
 
