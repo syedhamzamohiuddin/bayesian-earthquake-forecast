@@ -1,7 +1,18 @@
+# ------------------------------------------------------------------------------
+# 01_model_order_selection.R
+#
+# This script selects the optimal order `p` for an autoregressive (AR) model 
+# applied to annual global earthquake count data (magnitude > 7). It evaluates 
+# Partial Autocorrelation Function (PACF), Akaike Information Criterion (AIC), 
+# and Bayesian Information Criterion (BIC) for AR orders from 1 to 15.
+#
+# Output: AIC and BIC plots to help determine the most appropriate AR order.
+# ------------------------------------------------------------------------------
+
+
+
 earthquakes.dat <- read.delim("data/earthquakes.txt")
 earthquakes.dat$Quakes=as.numeric(earthquakes.dat$Quakes)
-
-
 y=earthquakes.dat$Quakes
 ##########################################################################
 ##########################################################################
