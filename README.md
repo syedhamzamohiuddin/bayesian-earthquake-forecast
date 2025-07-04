@@ -30,12 +30,14 @@ This project uses Bayesian autoregressive models to forecast the annual count of
 - R (version 4.x)
 - Key packages: `mvtnorm`, `MASS`, `stats`, `base`
 
-Install required packages with:
-
-```r
-install.packages(c("mvtnorm", "MASS"))
 
 ## 🧩 Planned Improvements
 - Add inline comments to R scripts for better readability
 - Reproduce missing mixture model code (optional)
 - Convert scripts into R Markdown notebooks (optional)
+
+Install required packages with:
+
+```r
+install.packages(c("mvtnorm", "MASS"))
+
