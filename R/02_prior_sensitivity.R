@@ -1,3 +1,14 @@
+# ------------------------------------------------------------------------------
+# 02_prior_sensitivity_analysis.R
+#
+# This script performs prior sensitivity analysis for a Bayesian AR(3) model 
+# using earthquake count data. It computes the posterior parameters for the 
+# model under multiple prior configurations and shows how robust the posterior 
+# distributions of AR coefficients (ϕ) are to changes in the hyperparameters.
+#
+# Output: Posterior parameters (m, C, n*, d*) under different priors.
+# ------------------------------------------------------------------------------
+
 ## read data, you need to make sure the data file is in your current working directory 
 print("hi")
 earthquakes.dat <- read.delim("data/earthquakes.txt")
